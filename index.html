@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+    <script type='text/javascript'>
+function ABTest(){
+  var link1="https://docs.google.com/forms/d/e/1FAIpQLSdP7cG6z1Sk9DdfZllHrb09i6EDlrV1IbkI-Ss_Hnbv5GwIZA/viewform?usp=sf_link"
+  var link2="https://docs.google.com/forms/d/e/1FAIpQLSdk1yjvQzUmq9LLIzONSBCSEvq5VXEuJaeEo4_-lQ39h4YGfQ/viewform?usp=sf_link"
+  if (Math.random() < 0.5) { // do something cleverer here
+    window.location=link1
+  } else {
+    window.location=link2
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <p>
+      Tack för att du vill delta i min studie. Klicka nedan för att börja:
+    </p>
+    <p>
+    <button onclick="ABTest()">Starta</button>
+    </p>
+  </body>
+
+</html>
+
+<!-- Using cookies to keep track of A/B testing
+  https://www.w3schools.com/js/tryit.asp?filename=tryjs_cookie_username
+  -->
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
